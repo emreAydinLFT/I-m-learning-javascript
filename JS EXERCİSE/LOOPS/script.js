@@ -22,3 +22,22 @@ for (let i = 1; i <= rows; i++) {
 
   console.log(line); //! Satırı ekrana yazdırın
 }
+
+
+//! Dizi elemanlarını yazdırma 
+
+let fruits = ['apple', 'banana', 'chery'];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+//!  Döngü İçinde Koşul Kontrolü
+
+for (let i = 0; i < 10 ; i++){
+    if (i % 2 === 0){
+      console.log (i + ' çiftin katı')
+    }else {
+      console.log(`${i} çiftin katı değil`)
+    }
+}

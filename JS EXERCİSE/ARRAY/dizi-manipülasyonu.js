@@ -19,7 +19,6 @@ console.log(evenNumbers);    //todo -- belirtilen koşulu sağlayan elemanlardan
 const sum = numbers.reduce((acc,num) => acc + num, 0);
 console.log(sum); //todo  Dizeyi tek bir değere indirger. Mesela tüm elemanların toplamını hesaplamak.
 
-
 //! forEach() Yöntemi 
 
 // const numbers = [1, 2, 3, 4, 5];
@@ -33,7 +32,6 @@ const sliceNumbers = numbers.slice(1,4);
 console.log(sliceNumbers);
 //todo  Belirli bir aralıktaki elemanları içeren yeni bir dizi döner. Orijinal dizi değişmez.
 
-
 //! splice() Yöntemi
 
 numbers.splice(2, 1, 99); //todo 2. index elemanından itibaren 1 eleman sil ve yerine 99 ekle.
@@ -46,11 +44,9 @@ console.log(found); //todo find() ilk eşleşen elemanı döner.
 const index = numbers.findIndex(num => num > 10);
 console.log(index);  //todo findIndex() bu elemanın dizinini döner. Yani index numarasını.
 
-
 //! concat() yöntemi iki veya daha fazla diziyi birleştirir ve yeni bir dizi döner.
 //! reverse() diziyi tersine çevirir ve orijinal diziyi değiştirir.
 //! sort() diziyi sıralar ve orijinal diziyi değiştirir. Varsayılan olarak, elemanları string olarak sıralar.
-
 
 
 
@@ -79,6 +75,47 @@ console.log(index);  //todo findIndex() bu elemanın dizinini döner. Yani index
 //todo diziyi tersine çevirir ve orijinal diziyi değiştirir.
 //? sort(sıralama),
 //todo diziyi sıralar ve orijinal diziyi değiştirir. Varsayılan olarak, elemanları string olarak sıralar.
+//? shift()
+//todo Dizinin başındaki elemanı çıkarır ve döndürür.
+//? unshift()
+//todo Dizinin başına bir veya daha fazla eleman ekler.
+//? includes()
+//todo Dizinin belirli bir değeri içerip içermediğini kontrol eder.
+//? join()
+//todo Dizinin elemanlarını birleştirerek bir string oluşturur.
+
+//! string metodları
+
+//? charAt(index)
+//todo Belirtilen indeksdeki karakteri döndürür.
+//? charCodeAt(index)
+//todo Belirtilen indeksdeki karakterin Unicode değerini döndürür.
+//? concat(str1, str2, ...)
+//todo Birden fazla stringi birleştirir.
+//? includes(searchString, position)
+//todo Bir stringin belirli bir alt stringi içerip içermediğini kontrol eder.
+//? indexOf(searchValue, fromIndex)
+// todo Bir alt stringin ilk bulunduğu indeks değerini döndürür. Bulunamazsa -1 döner.
+//? lastIndexOf(searchValue, fromIndex)
+//todo Bir alt stringin son bulunduğu indeks değerini döndürür. Bulunamazsa -1 döner.
+//? match(regexp)
+//todo Düzenli ifade ile eşleşen tüm alt stringleri içeren bir dizi döndürür.
+//? replace(searchValue, newValue)
+//todo Bir alt string veya düzenli ifade ile eşleşen ilk değeri değiştirir.
+//? search(regexp)
+//todo Düzenli ifade ile eşleşen ilk değerin indeksini döndürür. Bulunamazsa -1 döner.
+//? trim()
+//todo Başındaki ve sonundaki boşluk karakterlerini kaldırır.
+//? padStart(targetLength, padString)
+//todo Stringin başlangıcına, belirtilen uzunluğa ulaşana kadar belirli bir karakter ekler.
+//? padEnd(targetLength, padString)
+//todo Stringin sonuna, belirtilen uzunluğa ulaşana kadar belirli bir karakter ekler.
+//? repeat(count)
+//todo  Stringi belirtilen sayıda tekrarlar.
+//? startsWith(searchString, position)
+//todo Stringin belirli bir konumdan başlayarak belirli bir alt string ile başlayıp başlamadığını kontrol eder.
+//? endsWith(searchString, length)
+//todo Stringin belirli bir uzunlukta olup belirli bir alt string ile bitip bitmediğini kontrol eder.
 
 
 const scores = [55, 53, 62, 86, 43, 94, 61];
@@ -158,4 +195,58 @@ const mesaiUcreleri =  mesailer.map(employee => {
 console.log(mesaiUcreleri);
 
 
-//!   salary : maaş, employee: çalışan
+//!   salary : maaş, employee: çalışan 
+
+//! -------------------------------------------------
+
+//! Dizideki en büyük sayıyı bulma.
+
+function findMax(arr) {
+    return Math.max(...arr);
+}
+
+let numbers1 = [5, 3, 9, 1, 7];
+console.log(findMax(numbers1)); // Çıktı: 9
+
+//! Dizideki Her Elemanı İkiye Katla
+
+function doubleArray(arr) {
+   return arr.map(num => num * 2)
+}
+
+let numbers2 = [2, 4, 6];
+console.log(doubleArray(numbers2)); // Çıktı: [4, 8, 12]
+
+
+//! Bir Diziyi Tersten Yazdırma
+
+function reverseArray(arr) {
+    return arr.reverse()
+}
+
+let numbers3 = [1, 2, 3, 4];
+console.log(reverseArray(numbers3)); // Çıktı: [4, 3, 2, 1]
+
+//!Bir Dizide Belirli Bir Değeri Bulma
+
+function containsValue(arr, value) {
+    return arr.includes(value)
+}
+
+let numbers4 = [10, 20, 30];
+console.log(containsValue(numbers4, 20)); // Çıktı: true
+console.log(containsValue(numbers4, 40)); // Çıktı: false
+
+//! Dizideki Tek ve Çift Sayıları Ayırma
+
+function separateOddEven(arr) {
+    let oddNumbers = arr.filter(num => num % 2 !== 0);
+    let evenNumbers = arr.filter(num => num % 2 === 0);
+    return [oddNumbers, evenNumbers];
+}
+
+let numbers5 = [1, 2, 3, 4, 5];
+console.log(separateOddEven(numbers5)); 
+// Çıktı: [[1, 3, 5], [2, 4]]
+
+
