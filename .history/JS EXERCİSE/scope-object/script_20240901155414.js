@@ -1,0 +1,35 @@
+// Literal notation
+  const person = {
+    firstName: 'Emre',
+    lastName: 'AYDIN',
+    age: 25,
+    country: 'Türkiye',
+    city: 'Kocaeli',
+    skills: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Python
+    ],
+    getFullName: function() {
+      return `${this.firstName}${this.lastName}`
+    },
+    'phone number': '+3584545454545'
+  }
+  
+  // "." operatörü kullanarak
+  console.log(person.firstName)
+  console.log(person.lastName)
+  console.log(person.age)
+  console.log(person.location) // undefined
+  
+  // kçşeli parantez kullanarak
+  console.log(person['firstName'])
+  console.log(person['lastName'])
+  console.log(person['age'])
+  console.log(person['age'])
+  console.log(person['location']) // undefined
+  
+  // örneğin, telefon numarasına erişmek için yalnızca köşeli parantez yöntemini kullanırız
+  console.log(person['phone number'])
