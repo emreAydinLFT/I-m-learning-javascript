@@ -88,41 +88,7 @@ console.log(copyPerson.hasOwnProperty('score'))
   console.log(anahtarlar);  // ["marka", "model", "yil"]
   
      //! Object.values() Methodu
-
-     //? Object.values() metodu, bir nesnenin tüm değerlerini içeren bir dizi döndürür.
-     const araba1 = {
-      marka: "Toyota",
-      model: "Corolla",
-      yil: 2020
-  };
-  
-  const degerler = Object.values(araba1);
-  console.log(degerler);  // ["Toyota", "Corolla", 2020]
-  
-     //! Object.entries() Methodu
-     //? Object.entries() metodu, bir nesnenin [anahtar, değer] çiftlerinden oluşan bir dizi döndürür. Her çift, bir alt dizi (array) olarak sunulur.
+     //?Object.values() metodu, bir nesnenin tüm değerlerini içeren bir dizi döndürür.
      
-     const arab3 = {
-      marka: "Toyota",
-      model: "Corolla",
-      yil: 2020
-  };
-  
-  const girisler = Object.entries(araba3);
-  console.log(girisler);
-  // [["marka", "Toyota"], ["model", "Corolla"], ["yil", 2020]]
-  
-
+     //! Object.entries() Methodu
      //! hasOwnProperty() Methodu
-     //? hasOwnProperty() metodu, belirtilen bir anahtarın (property) nesnenin kendisine ait olup olmadığını kontrol eder. Yani, bu anahtarın nesnenin kendi özelliklerinden biri olup olmadığını döndürür (true veya false).
-
-     const araba4 = {
-      marka: "Toyota",
-      model: "Corolla",
-      yil: 2020
-  };
-  
-  console.log(araba4.hasOwnProperty("marka"));  // true
-  console.log(araba4.hasOwnProperty("renk"));   // false
-  
-  

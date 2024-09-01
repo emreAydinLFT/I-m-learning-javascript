@@ -9,8 +9,7 @@ function topla(a , b){
     return(a + b);
 }
 console.log(topla(5,3));
-
-<<<<<<< HEAD
+ 
 
 //! Yüksek dereceli fonksiyonlar (Higher-Order Functions)
 

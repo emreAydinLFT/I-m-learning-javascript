@@ -114,15 +114,3 @@ console.log(copyPerson.hasOwnProperty('score'))
   
 
      //! hasOwnProperty() Methodu
-     //? hasOwnProperty() metodu, belirtilen bir anahtarın (property) nesnenin kendisine ait olup olmadığını kontrol eder. Yani, bu anahtarın nesnenin kendi özelliklerinden biri olup olmadığını döndürür (true veya false).
-
-     const araba4 = {
-      marka: "Toyota",
-      model: "Corolla",
-      yil: 2020
-  };
-  
-  console.log(araba4.hasOwnProperty("marka"));  // true
-  console.log(araba4.hasOwnProperty("renk"));   // false
-  
-  

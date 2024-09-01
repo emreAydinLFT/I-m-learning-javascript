@@ -122,7 +122,6 @@ console.log(copyPerson.hasOwnProperty('score'))
       yil: 2020
   };
   
-  console.log(araba4.hasOwnProperty("marka"));  // true
-  console.log(araba4.hasOwnProperty("renk"));   // false
-  
+  console.log(araba.hasOwnProperty("marka"));  // true
+  console.log(araba.hasOwnProperty("renk"));   // false
   

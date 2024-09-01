@@ -1,0 +1,2 @@
+//? Destructuring => şeklini bozma
+//? Spread 

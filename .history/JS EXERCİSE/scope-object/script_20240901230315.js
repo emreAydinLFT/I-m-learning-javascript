@@ -102,27 +102,6 @@ console.log(copyPerson.hasOwnProperty('score'))
      //! Object.entries() Methodu
      //? Object.entries() metodu, bir nesnenin [anahtar, değer] çiftlerinden oluşan bir dizi döndürür. Her çift, bir alt dizi (array) olarak sunulur.
      
-     const arab3 = {
-      marka: "Toyota",
-      model: "Corolla",
-      yil: 2020
-  };
-  
-  const girisler = Object.entries(araba3);
-  console.log(girisler);
-  // [["marka", "Toyota"], ["model", "Corolla"], ["yil", 2020]]
-  
+     
 
      //! hasOwnProperty() Methodu
-     //? hasOwnProperty() metodu, belirtilen bir anahtarın (property) nesnenin kendisine ait olup olmadığını kontrol eder. Yani, bu anahtarın nesnenin kendi özelliklerinden biri olup olmadığını döndürür (true veya false).
-
-     const araba4 = {
-      marka: "Toyota",
-      model: "Corolla",
-      yil: 2020
-  };
-  
-  console.log(araba4.hasOwnProperty("marka"));  // true
-  console.log(araba4.hasOwnProperty("renk"));   // false
-  
-  

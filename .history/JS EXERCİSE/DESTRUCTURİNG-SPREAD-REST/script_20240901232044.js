@@ -1,0 +1,1 @@
+//? Destructuring => şeklini bozma

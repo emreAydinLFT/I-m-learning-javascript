@@ -125,4 +125,3 @@ console.log(copyPerson.hasOwnProperty('score'))
   console.log(araba4.hasOwnProperty("marka"));  // true
   console.log(araba4.hasOwnProperty("renk"));   // false
   
-  
