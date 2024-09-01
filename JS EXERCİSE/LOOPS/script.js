@@ -24,6 +24,7 @@ for (let i = 1; i <= rows; i++) {
 }
 
 
+<<<<<<< HEAD
 
 //! for() döngüsü
 
@@ -138,3 +139,22 @@ for (let i=1; i < sayilar7.length; i++) {
   
   console.log("En büyük sayı:", enBuyukSayi2);
 
+=======
+//! Dizi elemanlarını yazdırma 
+
+let fruits = ['apple', 'banana', 'chery'];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+//!  Döngü İçinde Koşul Kontrolü
+
+for (let i = 0; i < 10 ; i++){
+    if (i % 2 === 0){
+      console.log (i + ' çiftin katı')
+    }else {
+      console.log(`${i} çiftin katı değil`)
+    }
+}
+>>>>>>> 3fe663fb04436dd0ed8f229a4444be251ce3cf9e

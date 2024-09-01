@@ -10,6 +10,7 @@ function topla(a , b){
 }
 console.log(topla(5,3));
 
+<<<<<<< HEAD
 
 //! Yüksek dereceli fonksiyonlar (Higher-Order Functions)
 
@@ -99,3 +100,5 @@ function topla(...sayilar) {
     return sayilar.reduce((toplam, sayi) => toplam + sayi, 0);
 }
 console.log(topla(1, 2, 3, 4));
+=======
+>>>>>>> 3fe663fb04436dd0ed8f229a4444be251ce3cf9e
