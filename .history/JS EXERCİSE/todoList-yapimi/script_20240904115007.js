@@ -1,0 +1,1 @@
+// DOM elementlerini seçelim
