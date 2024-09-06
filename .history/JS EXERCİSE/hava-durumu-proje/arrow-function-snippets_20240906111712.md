@@ -1,0 +1,10 @@
+``Javascript
+
+af→    () => 
+afa→   (arg) => █
+
+
+
+
+
+``

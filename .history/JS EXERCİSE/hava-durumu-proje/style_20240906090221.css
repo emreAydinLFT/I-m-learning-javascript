@@ -1,0 +1,22 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body {
+font-family: 'montserrat' , sans-serif;
+color: #fff;
+background-image: url('manzara.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+}
+.app{
+display: flex;    
+flex-direction: column;
+align-items: center;
+text-align: center;
+background: rgba(0,0,0,.7);
+height: 100vh;
+}
+.header{padding: 50px 20px 30px 20px;}
+.header h1{
+font
+}
