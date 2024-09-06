@@ -14,7 +14,9 @@ const getResult = (cityName) => {
     })
     .then(displayResult)
 }
-
+(params) => {
+    
+}
 
 const displayResult = (result) => {
     let city = document.querySelector('.city')
@@ -63,7 +65,6 @@ searchBar.addEventListener('keypress', setQuery)
 // without = olmadan, onsuz
 // response = cevap
 // responsive = duyarlı
-// folder = dosya
 //! (e): Buradaki e, fonksiyona olay nesnesini (event object) geçmek için kullanılan bir parametredir.
 
 // e.keyCode: Kullanıcının bastığı tuşun sayısal kodunu verir. Örneğin, Enter tuşunun kodu 13, A tuşunun kodu 65'tir.
