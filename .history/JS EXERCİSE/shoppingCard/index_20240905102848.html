@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !  Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    link:<p>For more code samples please visit <a href="https://www.neodynamic.com/products/printing/js-print-manager/articles" target="_black">https://www.neodynamic.com/products/printing/js-print-manager/articles</a></p>
+    <div style="text-align:center">
+        <h1>Installed Client Printers</h1>
+        <hr />
+        <select name="installedPrinterName" id="installedPrinterName"></select>
+    </div>
+    <!--JSPrintManager scripts-->
+    <script type="text/javascript" src="https://jsprintmanager.azurewebsites.net/scripts/JSPrintManager.js"> </script>
+    <script type="text/javascript" src="https://jsprintmanager.azurewebsites.net/scripts/zip.js"> </script>
+    <script type="text/javascript" src="https://jsprintmanager.azurewebsites.net/scripts/zip-ext.js"> </script>
+    <script type="text/javascript" src="https://jsprintmanager.azurewebsites.net/scripts/deflate.js"> </script>
+    <!--end JSPrintManager scripts-->
+    <!--JSPrintManager List Client Printers Sample-->
+    <script type="text/javascript">
+        //WebSocket settings
+        JSPM.JSPrintManager.auto_reconnect = true;
+        JSPM.JSPrintManager.start();
+        JSPM.JSPrintManager.WS.onStatusChanged = function () {
+            if (jspmWSStatus()) {
+                //get client installed printers
+                JSPM.JSPrintManager.getPrinters().then(function (clientPrinters) {
+                    var sel = document.getElementById("installedPrinterName");
+                    for (var i = 0; i < clientPrinters.length; i++) {
+                        var option = document.createElement('option');
+                        option.value = option.text = clientPrinters[i];
+                        sel.add(option);
+                    }
+                });
+            }
+        };
+        //Check JSPM WebSocket status
+        function jspmWSStatus() {
+            if (JSPM.JSPrintManager.websocket_status == JSPM.WSStatus.Open)
+                return true;
+            else if (JSPM.JSPrintManager.websocket_status == JSPM.WSStatus.Closed) {
+                alert('JSPrintManager (JSPM) is not installed or not running! Download JSPM Client App from https://neodynamic.com/downloads/jspm');
+                return false;
+            }
+            else if (JSPM.JSPrintManager.websocket_status == JSPM.WSStatus.Blocked) {
+                alert('JSPM has Blocked this website!');
+                return false;
+            }
+        }
+    </script>
+    <!--end JSPrintManager List Client Printers Sample-->
+    
+    <title>Shopping Card</title>
+</head>
+<body>
+    <!-- ! Header Start -->
+    <header class="header-area">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <button class="btn-bar">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="navbar-middle">
+                    <div class="logo"></div>
+                </div>
+                <div class="navbar-right">
+                    <button class="card-btn" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasRight">
+                        <span class="card-items">0</span>
+                        <i class="fas fa-cart-shopping"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- ! Header Finish -->
+
+</body>
+</html>
