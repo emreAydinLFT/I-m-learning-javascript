@@ -1,0 +1,37 @@
+```JavaScript
+
+// select = seç
+// query = sorgu
+// get = almak
+// result = sonuç
+// fetch = gidip getirmek
+// search bar = arama çubuğu
+// value = değer
+// display = görüntüleme
+// set = ayarlamak
+// then = daha sonra
+// const = yapı
+// inner = iç
+// let = izin vermek
+// return = geri dönmek
+// keypress = tuşa basma
+// event = etkinlik, olay
+// object = nesne
+// target = hedef
+// mouseover = fare ile üzerine gelme
+// prevent = önlemek, engelemek
+// default = varsayılan
+// for each = her biri için
+// snippets = parçacıklar
+// implisit = gizli, örtülü
+// destructuring = yıkıcı
+// without = olmadan, onsuz
+// response = cevap
+// responsive = duyarlı
+// folder = dosya
+// rest = dinlenmek
+// promise = söz
+// destructuring = yıkıcı
+// spread = yaymak
+
+```

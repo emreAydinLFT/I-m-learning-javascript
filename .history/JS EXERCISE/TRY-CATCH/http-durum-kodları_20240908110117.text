@@ -1,0 +1,29 @@
+HTTP durum kodları, bir HTTP isteğinin sonucunu belirten sayısal kodlardır ve genellikle üç hanelidir. Kodlar, başarılı veya başarısız bir isteğin durumu hakkında bilgi verir. İşte kod aralıklarının anlamları:
+
+1-) 2xx (Başarı)
+
+200 OK: İstek başarılı bir şekilde işlenmiştir ve yanıt başarılıdır.
+201 Created: Kaynak başarılı bir şekilde oluşturulmuştur.
+204 No Content: İstek başarılı, ancak dönecek içerik yok.
+3xx (Yönlendirme)
+
+301 Moved Permanently: Kaynak kalıcı olarak taşınmıştır. Tarayıcı veya istemci yeni URL'ye yönlendirilmelidir.
+302 Found: Kaynak geçici olarak taşınmıştır. İstemci geçici olarak yeni URL'yi kullanmalıdır.
+4xx (İstemci Hatası)
+
+400 Bad Request: İstek hatalıdır veya geçersizdir.
+401 Unauthorized: Kimlik doğrulama gereklidir ve sağlanmamıştır.
+404 Not Found: İstenilen kaynak bulunamamıştır.
+403 Forbidden: İstek geçerli, ancak yetkisiz erişim nedeniyle reddedilmiştir.
+5xx (Sunucu Hatası)
+
+500 Internal Server Error: Sunucuda bir hata oluşmuştur ve isteği işleyememiştir.
+502 Bad Gateway: Geçerli bir yanıt almak için kullanılan bir üst sunucu hatalıdır.
+503 Service Unavailable: Sunucu geçici olarak hizmet verememektedir.
+response.ok ile İlgili Açıklama
+response.ok özelliği, yanıtın durum kodunun 200 ile 299 arasında olup olmadığını kontrol eder.
+Durum kodları bu aralıkta ise, response.ok true döner, aksi takdirde false döner.
+Örneğin:
+
+Eğer API'den 200, 201, 204 gibi durum kodları dönerse, response.ok true döner ve bu, isteğin başarılı olduğunu gösterir.
+Eğer API'den 404, 500 gibi durum kodları dönerse, response.ok false döner ve bu, isteğin başarısız olduğunu veya bir hata olduğunu belirtir.
