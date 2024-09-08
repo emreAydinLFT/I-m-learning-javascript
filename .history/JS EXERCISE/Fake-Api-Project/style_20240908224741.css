@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+border: none;
+list-style: none;
+font-family:"Dosis",sans-serif;
+}
+.card1 {
+    width: 300px; /* Kartın genişliği */
+    padding: 20px; /* İçerik ile kenarlar arasındaki boşluk */
+    background-color: #fffb00; /* Kartın arka plan rengi */
+    border-radius: 10px; /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    border: 1px solid #000000; /* İnce kenarlık */
+    margin: 20px auto; /* Ortalamak için kenar boşluğu */
+}
+.card1 h2 {
+    font-size: 1.5em; /* Başlığın boyutu */
+    font-weight: bold; /* Kalın yazı */
+    margin-bottom: 15px; /* Altında boşluk */
+    margin-top: 1;
+    color: #000000; /* Yazı rengi */
+    
+}
+.pTickets {
+    font-size: 1em; /* Normal metin boyutu */
+    line-height: 1.6; /* Satırlar arası boşluk */
+    color: #555; /* Metin rengi */
+    margin-bottom: 15px; /* Alt boşluk */
+}
+.cardImage {
+    width: 100%; /* Görselin genişliği kartın genişliğine uyar */
+    border-radius: 8px; /* Görselin köşelerini yuvarlatır */
+    margin-bottom: 15px; /* Görsel ile altındaki içerik arasında boşluk */
+}
+.cardButton {
+    display: inline-block; /* Butonu blok içinde göster */
+    padding: 10px 20px; /* Butonun iç boşluğu */
+    background-color: #007bff; /* Buton arka plan rengi */
+    color: #fff; /* Buton yazı rengi */
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    text-decoration: none; /* Bağlantı alt çizgisini kaldır */
+    font-size: 1em; /* Yazı boyutu */
+    margin-top: 10px; /* Üst boşluk */
+}
+.cardButton {
+    background-color: #0056b3; /* Hover sırasında arka plan değişikliği */
+}

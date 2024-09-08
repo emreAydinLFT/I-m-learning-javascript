@@ -45,5 +45,4 @@
 // async = eşzamansız
 // condisional = koşullu
 // condision = şart
-// description = tanıtım
-// product = ürün
+// description 

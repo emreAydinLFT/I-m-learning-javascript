@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+border: none;
+list-style: none;
+font-family:"Dosis",sans-serif;
+}
+.card1 {
+    width: 300px; /* Kartın genişliği */
+    padding: 20px; /* İçerik ile kenarlar arasındaki boşluk */
+    background-color: #fffb00; /* Kartın arka plan rengi */
+    border-radius: 10px; /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    border: 1px solid #000000; /* İnce kenarlık */
+    margin: 20px auto; /* Ortalamak için kenar boşluğu */
+}
+.card1 h2 {
+    font-size: 1.5em; /* Başlığın boyutu */
+    font-weight: bold; /* Kalın yazı */
+    margin-bottom: 15px; /* Altında boşluk */
+    margin-top: 15px;
+    color: #000000; /* Yazı rengi */
+    text-align: center;
+    
+}
+.pTickets {
+    font-size: 1em; /* Normal metin boyutu */
+    line-height: 1.6; /* Satırlar arası boşluk */
+    color: #555; /* Metin rengi */
+    margin-bottom: 15px; /* Alt boşluk */
+}
+.cardImage {
+    width: 100%; /* Görselin genişliği kartın genişliğine uyar */
+    border-radius: 8px; /* Görselin köşelerini yuvarlatır */
+    margin-bottom: 15px; /* Görsel ile altındaki içerik arasında boşluk */
+}
+
+.button {
+    display: inline-block; /* Butonu blok olarak göstermek için */
+    padding: 10px 20px; /* İçerik ile kenarlar arasındaki boşluk */
+    background-color: #007bff; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    border: 1px solid #007bff; /* Kenarlık rengi */
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    text-align: center; /* Metni ortalar */
+    text-decoration: none; /* Alt çizgi yok */
+    font-size: 1em; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    transition: background-color 0.3s, border-color 0.3s; /* Hover geçiş efekti */
+    justify-content: center;
+}
+.button:hover {
+    background-color: #0056b3; /* Hover sırasında arka plan rengi */
+    border-color: #0056b3; /* Hover sırasında kenarlık rengi */
+}
+

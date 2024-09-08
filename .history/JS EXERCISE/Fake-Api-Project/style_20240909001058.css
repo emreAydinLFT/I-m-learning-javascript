@@ -1,0 +1,71 @@
+/* Genel gövde ve arka plan ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container ayarları */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Kart stili */
+.card1 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Resim stili */
+.cardImage {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Başlık stili */
+.title {
+    font-size: 1.25em;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+/* Fiyat stili */
+.price {
+    font-size: 1.1em;
+    color: #e74c3c;
+    margin: 0;
+}
+
+/* Açıklama ve kategori stili */
+.description,
+.category {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+/* Kart içindeki öğeler için padding ve margin */
+.card1 p {
+    margin: 10px 0;
+}
+
+.card1 h2 {
+    margin: 15px 0;
+}

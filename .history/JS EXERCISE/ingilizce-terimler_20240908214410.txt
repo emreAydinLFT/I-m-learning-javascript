@@ -46,4 +46,4 @@
 // condisional = koşullu
 // condision = şart
 // description = tanıtım
-// product = ürün
+// 

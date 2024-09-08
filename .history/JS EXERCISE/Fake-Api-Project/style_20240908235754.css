@@ -1,0 +1,90 @@
+/* Genel ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Kartın kapsayıcısı */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Kartın stili */
+.card1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Kart içeriği */
+.cardContent {
+    padding: 20px;
+}
+
+/* Ürün resmi */
+.cardImage {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Başlık */
+.title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Fiyat */
+.price {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+/* Açıklama */
+.description {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Kategori */
+.category {
+    font-size: 0.9em;
+    color: #888;
+    margin: 10px 0;
+}
+
+/* Buton (opsiyonel) */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
