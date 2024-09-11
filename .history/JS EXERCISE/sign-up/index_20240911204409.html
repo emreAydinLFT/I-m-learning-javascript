@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Kayıt Ol</h1>
+        <form id="signupForm">
+            <label for="email1">E-posta Adresiniz:</label>
+            <input id="email1" type="email" placeholder="E-posta Adresiniz" required />
+            <br />
+            <label for="email2">E-posta Adresiniz (Tekrar):</label>
+            <input id="email2" type="email" placeholder="E-posta Adresiniz (Tekrar)" required />
+            <br />
+            <label for="parola1">Parola:</label>
+            <input id="parola1" type="password" placeholder="Parola" minlength="8" maxlength="16" required />
+            <br />
+            <label for="parola2">Parola (Tekrar):</label>
+            <input id="parola2" type="password" placeholder="Parola (Tekrar)" minlength="8" maxlength="16" required />
+            <br />
+            <label for="phone">Telefon Numarası:</label>
+            <input id="phone" type="tel" placeholder="5XX-XXX-XXXX" pattern="[5]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}" required />
+            <br />
+            <label for="countries">Ülke:</label>
+            <select id="countries" required>
+                <option value="">Bir ülke seçin</option>
+                <option value="Türkiye">Türkiye</option>
+                <option value="Almanya">Almanya</option>
+                <option value="Tacikistan">Tacikistan</option>
+                <option value="Amerika">Amerika</option>
+            </select>
+            <br />
+            <button type="submit">Kayıt Ol</button>
+            <p id="errorMessage" class="error-message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

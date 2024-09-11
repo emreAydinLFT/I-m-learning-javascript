@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Yatayda ortala */
+    align-items: center;     /* Dikeyde ortala */
+    background-color: #f0f8ff; /* Arka plan rengi */
+}
+.container {
+border-radius: 2%;
+border: 1px solid black;
+width: 50%;
+justify-content: center;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+input {
+width: 80%;
+padding: 20px;
+margin: 20px auto;
+border-radius: 10px; 
+border: 1px solid #ccc;
+transition: border-color 0.3s ease; /* Animasyon için */
+outline: none; /* Varsayılan odak göstergesini kaldır */
+}
+input:focus {
+    outline: none; /* Varsayılan mavi kenarlığı kaldır */
+    border-color: #007BFF; /* Mavi çerçeve */
+    border: 3px solid #007BFF;
+}
+button {
+margin-bottom: 20px;
+padding: 20px;
+}
+select {
+padding: 15px;
+display: inline;
+left: 0px;
+}

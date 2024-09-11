@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="js.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kayıt Ol</h1>
+      <h3>Kişisel verileriniz Aydınlatma Metni kapsamında işlenmektedir.</h3>
+      <input class="email1" type="text" placeholder="Email Adresiniz" />
+      <br />
+      <input
+        class="email2"
+        type="text"
+        placeholder="Email Adresiniz (Tekrar)"
+      />
+      <br />
+      <input class="parola1" type="password" placeholder="Parola" />
+      <br />
+      <input class="parola2" type="password" placeholder="Parola (Tekrar)" />
+      <br />
+      <input type="text" placeholder="Adınız" />
+      <br />
+      <input type="text" placeholder="Soyadınız" />
+      <br />
+      <select name="countries" id="countries">
+        <option value="Türkiye">Türkiye</option>
+        <option value="Almanya">Almanya</option>
+        <option value="Tacikistan">Tacikistan</option>
+        <option value="Amerika">Amerika</option>
+      </select>
+      <br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="5XX-XXX-XXXX"
+        pattern="[5]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}"
+        required
+      />
+      <br />
+      <button type="submit">Kayıt Ol</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

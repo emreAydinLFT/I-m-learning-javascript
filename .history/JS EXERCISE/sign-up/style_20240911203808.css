@@ -1,0 +1,71 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Yumuşak bir arka plan rengi */
+    color: #333; /* Yazı rengi */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff; /* Beyaz arka plan */
+    border-radius: 8px; /* Köşeleri yuvarlatılmış */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    padding: 20px;
+    max-width: 400px; /* Maksimum genişlik */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Başlık rengi */
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #7f8c8d; /* Alt başlık rengi */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7; /* Gri kenarlık */
+    border-radius: 4px; /* Köşeleri yuvarlatılmış */
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db; /* Buton arka plan rengi */
+    color: #ffffff; /* Buton yazı rengi */
+    border: none;
+    border-radius: 4px; /* Köşeleri yuvarlatılmış */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9; /* Buton üzerine gelindiğinde arka plan rengi */
+}
+
+.error {
+    border: 2px solid red;
+}
+
+#errorMessage {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}

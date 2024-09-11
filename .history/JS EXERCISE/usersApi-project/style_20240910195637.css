@@ -1,0 +1,40 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ayarı */
+    background-color: #f4f4f4; /* Arka plan rengi */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tam ekran yüksekliği */
+  }
+  
+  /* Konteyner stili */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Kartlar arasındaki boşluk */
+    padding: 20px;
+    max-width: 1200px; /* Maksimum genişlik */
+  }
+  
+  /* Kart stili */
+  .card {
+    background-color: #fff; /* Kart arka plan rengi */
+    border: 1px solid #ddd; /* Kart kenarlık rengi */
+    border-radius: 8px; /* Köşe yuvarlama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    padding: 15px;
+    width: 300px; /* Kart genişliği */
+  }
+  
+  /* Kart içindeki öğeler için stil */
+  .card p {
+    margin: 5px 0; /* Paragraf üst ve alt margin */
+  }
+  
+  .card .address p {
+    margin-left: 10px; /* Adres paragrafı için sol margin */
+  }
+  

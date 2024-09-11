@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="js.png" />
+</head>
+<body>
+    <div class="container">
+        <h1>Kayıt Ol</h1>
+        <h3>Kişisel verileriniz Aydınlatma Metni kapsamında işlenmektedir.</h3>
+        <form id="signupForm">
+            <input
+                id="email1"
+                class="email1"
+                type="text"
+                placeholder="Email Adresiniz"
+            />
+            <br />
+            <input
+                id="email2"
+                class="email2"
+                type="text"
+                placeholder="Email Adresiniz (Tekrar)"
+            />
+            <br />
+            <input
+                id="parola1"
+                class="parola1"
+                type="password"
+                placeholder="Parola"
+            />
+            <br />
+            <input
+                id="parola2"
+                class="parola2"
+                type="password"
+                placeholder="Parola (Tekrar)"
+            />
+            <br />
+            <input type="text" placeholder="Adınız" />
+            <br />
+            <input type="text" placeholder="Soyadınız" />
+            <br />
+            <select name="countries" id="countries">
+                <option value="Türkiye">Türkiye</option>
+                <option value="Almanya">Almanya</option>
+                <option value="Tacikistan">Tacikistan</option>
+                <option value="Amerika">Amerika</option>
+            </select>
+            <br />
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Telefon numaranızı girin"
+        
+                required
+            />
+            <br />
+            <button type="submit">Kayıt Ol</button>
+            <p id="errorMessage" style="color: red;"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

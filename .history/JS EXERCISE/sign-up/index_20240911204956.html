@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kayıt Ol</h1>
+        <form id="registrationForm">
+            <label for="username">Kullanıcı Adı:</label>
+            <input type="text" id="username" name="username" required>
+            <span id="usernameError" class="error"></span>
+            
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
+            
+            <label for="password">Şifre:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error"></span>
+            
+            <label for="confirmPassword">Şifreyi Onayla:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span id="confirmPasswordError" class="error"></span>
+            
+            <label for="dob">Doğum Tarihi:</label>
+            <input type="date" id="dob" name="dob" required>
+            <span id="dobError" class="error"></span>
+            
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                Kullanım şartlarını kabul ediyorum
+            </label>
+            <span id="termsError" class="error"></span>
+            
+            <button type="submit">Kaydol</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
