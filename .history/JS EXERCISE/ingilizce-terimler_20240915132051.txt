@@ -90,4 +90,4 @@
 // event handler: etkinlik işleyici
 // routing: yönlendirme
 // SPA: Tek Sayfa Uygulaması
-// SSR: Sunucu Tarafı Render (Server-Side Rendering)
+SSR: Sunucu Tarafı Render (Server-Side Rendering)

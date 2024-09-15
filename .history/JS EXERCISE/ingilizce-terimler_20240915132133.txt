@@ -82,7 +82,7 @@
 // axios: Axios (bir HTTP istemci kütüphanesi)
 // WebSocket: Web Soketi
 // REST: Temel Durum Transferi
-// GraphQL: GraphQL (bir veri sorgulama dili)
+// GraphQL : GraphQL (bir veri sorgulama dili)
 // template: şablon
 // state: durum
 // props: özellikler

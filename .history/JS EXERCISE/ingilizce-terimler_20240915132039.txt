@@ -85,9 +85,9 @@
 // GraphQL: GraphQL (bir veri sorgulama dili)
 // template: şablon
 // state: durum
-// props: özellikler
-// context: bağlam
-// event handler: etkinlik işleyici
-// routing: yönlendirme
-// SPA: Tek Sayfa Uygulaması
-// SSR: Sunucu Tarafı Render (Server-Side Rendering)
+props: özellikler
+context: bağlam
+event handler: etkinlik işleyici
+routing: yönlendirme
+SPA: Tek Sayfa Uygulaması
+SSR: Sunucu Tarafı Render (Server-Side Rendering)
