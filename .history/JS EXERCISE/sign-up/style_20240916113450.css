@@ -1,0 +1,40 @@
+html, body {
+  height: 100%; /* Tüm sayfa yüksekliğini kapsaması için */
+  margin: 0; /* Varsayılan tarayıcı boşluklarını kaldırmak için */
+  display: flex;
+  justify-content: center; /* Yatayda ortalamak için */
+  align-items: center; /* Dikeyde ortalamak için */
+}
+
+.container {
+  width: 100%;
+  max-width: 400px; /* Kapsayıcı genişliği */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  background-color: #fff; /* Arka plan rengi */
+  text-align: center; /* İçeriği ortalamak için */
+  border-radius: 10px; /* Hafif köşe yuvarlama */
+}
+
+.error-password {
+  color: red;
+  font-size: 14px;
+  display: none; /* Başlangıçta gizli */
+  width: 100%; /* Hata mesajının genişliği input alanına eşit */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etmek için */
+  margin: 0; /* Varsayılan boşluğu kaldırmak için */
+}
+
+input.error {
+  border-color: red; /* Hata durumunda kırmızı çerçeve */
+  width: 100%; /* Input genişliği */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etmek için */
+}
+
+.container input {
+  width: 100%; /* Input genişliği kutu içindeki tam alanı kapsar */
+  max-width: 400px; /* İsteğe bağlı maksimum genişlik */
+  padding: 8px; /* İç boşluk */
+  margin-bottom: 10px; /* Input'lar arasındaki mesafe */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etmek için */
+}

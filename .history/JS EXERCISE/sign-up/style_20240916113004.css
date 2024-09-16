@@ -1,0 +1,24 @@
+.container{
+border: 1px solid black;
+margin: 10;
+}
+.error-password {
+  color: red;
+  font-size: 14px;
+  display: none; /* Başlangıçta gizli */
+  width: 100%; /* Hata mesajının genişliği input alanına eşit */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etmek için */
+}
+
+input.error {
+  border-color: red; /* Hata durumunda kırmızı çerçeve */
+  width: 100%; /* Input kutusunun genişliği */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil etmek için */
+}
+
+.container input {
+  width: 100%; /* Input genişliği kutu içindeki tam alanı kapsar */
+  max-width: 400px; /* İsteğe bağlı maksimum genişlik */
+  padding: 8px; /* İç boşluk */
+  margin-bottom: 10px; /* Input'lar arasındaki mesafe */
+}
