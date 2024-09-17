@@ -6,7 +6,7 @@ border: 1px solid black;
 padding: 20px;
 width: 400px;
 text-align: center;
-border-radius : 40px;
+border-ra
 
 }
 .error-password {
@@ -28,7 +28,4 @@ input.error {
   max-width: 400px; /* İsteğe bağlı maksimum genişlik */
   padding: 8px; /* İç boşluk */
   margin-bottom: 10px; /* Input'lar arasındaki mesafe */
-}
-input {
-border-radius : 10px;
 }

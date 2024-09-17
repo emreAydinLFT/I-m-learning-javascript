@@ -19,7 +19,7 @@ function checkPassword() {
   // Parola input alanını DOM'dan seçiyoruz, çünkü duruma göre çerçevesini kırmızı yapacağız
   let passwordInput = document.querySelector(".password"); 
 
-  // Parolanın 8 karakterden kısa, 12 karakterden uzun veya tamamen boş olup olmadığını kontrol ediyoruz
+  // Parolanın 8 karakterden kısa, 1 karakterden uzun veya tamamen boş olup olmadığını kontrol ediyoruz
   if (password.length < 8 || password.length > 12 || password.trim() === "") {
     // Eğer parola geçerli değilse:
     // Hata mesajını belirliyoruz ve hata mesajını görünür yapıyoruz
