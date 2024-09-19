@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Kayıt Ol</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="adı">Adı</label>
+                <input type="text" id="adı" name="adı" placeholder="Adınızı girin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="soyadı">Soyadı</label>
+                <input type="text" id="soyadı" name="soyadı" placeholder="Soyadınızı girin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="eposta">E-posta</label>
+                <input type="email" id="eposta" name="eposta" placeholder="E-posta adresinizi girin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="epostaTekrar">E-posta Tekrar</label>
+                <input type="email" id="epostaTekrar" name="epostaTekrar" placeholder="E-postanızı tekrar girin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="Telefon numaranızı girin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="şifre">Şifre</label>
+                <input type="password" id="şifre" name="şifre" placeholder="Şifrenizi girin" required>
+                <meter max="5" id="strengthBar"></meter>
+            </div>
+
+            <div class="form-group">
+                <label for="şifreTekrar">Şifre Tekrar</label>
+                <input type="password" id="şifreTekrar" name="şifreTekrar" placeholder="Şifrenizi tekrar girin" required>
+            </div>
+
+            <button type="submit">Üye Ol</button>
+            <p id="successMessage"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

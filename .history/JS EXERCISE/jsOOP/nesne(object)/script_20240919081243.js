@@ -1,0 +1,2 @@
+//! Bir nesnenin özellliğine erişme
+

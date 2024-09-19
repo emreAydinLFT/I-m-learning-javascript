@@ -1,0 +1,1 @@
+//Metot Geçersiz Kılma (Override)

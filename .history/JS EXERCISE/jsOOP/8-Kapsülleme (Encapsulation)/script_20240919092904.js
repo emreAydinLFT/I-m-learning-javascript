@@ -1,0 +1,3 @@
+//! Kapsülleme (Encapsulation)
+
+//?

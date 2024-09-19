@@ -1,0 +1,1 @@
+//! Tasarım Kalıpları (Design Patterns)

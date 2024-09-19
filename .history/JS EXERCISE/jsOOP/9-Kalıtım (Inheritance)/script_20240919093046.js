@@ -1,0 +1,1 @@
+9-Kalıtım (Inheritance)

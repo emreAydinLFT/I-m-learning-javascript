@@ -1,0 +1,2 @@
+//! Kapsülleme (Encapsulation)
+

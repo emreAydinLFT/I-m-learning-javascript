@@ -1,0 +1,1 @@
+//! Metotların Özellikleri

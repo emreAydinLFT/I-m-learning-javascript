@@ -1,0 +1,2 @@
+//! Constructor (Yapıcı Metot)
+//? 

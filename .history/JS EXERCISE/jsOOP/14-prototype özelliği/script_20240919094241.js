@@ -1,0 +1,3 @@
+//! JavaScript'te Prototype Özelliği
+
+//?
