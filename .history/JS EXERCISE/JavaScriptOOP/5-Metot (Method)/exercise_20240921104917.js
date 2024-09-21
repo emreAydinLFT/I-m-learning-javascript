@@ -1,0 +1,2 @@
+//! JavaScript'te Nesneler:
+//? 

@@ -1,0 +1,3 @@
+class Hesap {
+    constructor(bakiye) 
+}
