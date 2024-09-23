@@ -172,7 +172,7 @@ person.greet();
 //? Arrow Function: greet metodu, daha kısa ve okunaklı bir şekilde tanımlanmıştır.
 //? Template Literal: console.log içindeki stringi biçimlendirmek için template literal kullanılmıştır.
 
-//! b (güncel yöntem)
+//! b
 
 class Person {
   // Person sınıfı, bir kişiyi temsil eden bir şablondur.
@@ -234,15 +234,3 @@ class Cat extends Animal {
 //? Prototypes: JavaScript'in prototip tabanlı bir dil olması, nesnelerin özelliklerini ve metodlarını prototiplerden devraldığı anlamına gelir.
 //? This: this anahtar kelimesi, bir metodun çağrıldığı bağlamı ifade eder.
 //? Closure: Bir iç fonksiyonun dış fonksiyonun kapsamındaki değişkenlere erişebilmesi.
-
-
-//! Özetle
-
-//! Kalıtım (Inheritance):
-//? Kalıtım, bir sınıfın (çocuk sınıfı) başka bir sınıftan (ebeveyn sınıfı) özellik ve davranışları miras alması sürecidir. Bu sayede kod tekrarından kaçınılır ve yazılımın daha modüler hale getirilmesi sağlanır.
-
-//! Kapsülleme (Encapsulation)
-//? Kapsülleme, bir nesnenin iç durumunu ve davranışlarını dış dünyadan gizleme ve bu duruma kontrollü erişim sağlama işlemidir. Bu sayede, bir nesnenin iç yapısının değiştirilmesi durumunda diğer nesneler etkilenmez.
-
-//! Polimorfizm (Polymorphism)
-//? Polimorfizm, aynı isimli ama farklı imzaları olan metotların farklı sınıflar tarafından farklı şekilde uygulanabilme özelliğidir. Bu sayede, farklı türdeki nesneler aynı mesajı almasına rağmen farklı tepkiler verebilir.

@@ -171,43 +171,25 @@ person.greet();
 
 //? Arrow Function: greet metodu, daha kısa ve okunaklı bir şekilde tanımlanmıştır.
 //? Template Literal: console.log içindeki stringi biçimlendirmek için template literal kullanılmıştır.
+//! b
 
-//! b (güncel yöntem)
+// Destructuring
+const person = { name: "Ali", age: 30 };
+const { name, age } = person;
+console.log(name, age);
 
-class Person {
-  // Person sınıfı, bir kişiyi temsil eden bir şablondur.
-  constructor(name, age) {
-    // Constructor, yeni bir Person nesnesi oluşturulduğunda çağrılır.
-    this._name = name; // Nesnenin özel bir isim özelliği oluşturulur ve verilen isim değeri atanır.
-    // _ işaretiyle başlayan özellikler genellikle özel olarak kabul edilir ve dışarıdan doğrudan erişilmesi engellenir.
-    this._age = age; // Nesnenin özel bir yaş özelliği oluşturulur ve verilen yaş değeri atanır.
-  }
+// Spread Operator
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4, 5];
+console.log(newNumbers);
 
-  // Getter ve setter metotları, nesnenin özelliklerine dışarıdan erişim ve değişiklik yapma mekanizmalarıdır.
-  get name() {
-    // name özelliğine erişildiğinde bu metot çağrılır.
-    return { ...this }; // Nesnenin bir kopyasını oluşturur ve döndürür. Bu sayede orijinal nesne üzerinde değişiklik yapma riskini azaltır.
-  }
-  set name({ name }) {
-    // name özelliğine yeni bir değer atanmak istendiğinde bu metot çağrılır.
-    this._name = name; // Yeni verilen isim değeri, özel _name özelliğine atanır.
-  }
-
-  async fetchData() {
-    // Asenkron bir şekilde veri çekme işlemi yapar.
-    try {
-      // Veri çekme işlemi başlatılır.
-      const response = await fetch("https://api.example.com/data");
-      // Gelen yanıtı JSON formatına çevirir.
-      const data = await response.json();
-      // Çekilen verileri konsola yazar.
-      console.log(data);
-    } catch (error) {
-      // Eğer bir hata oluşursa, hata mesajını konsola yazar.
-      console.error("Veri çekerken hata oluştu:", error);
-    }
-  }
+// Async/Await
+async function fetchData() {
+  const response = await fetch("https://api.example.com/data");
+  const data = await response.json();
+  console.log(data);
 }
+
 //! 5. Polimorfizm
 //? Tanım: Farklı türdeki nesnelerin aynı isimli metodu farklı şekillerde kullanabilmesi.
 
@@ -227,22 +209,10 @@ class Cat extends Animal {
   }
 }
 //? Polimorfizm: Farklı nesnelerin aynı mesajı farklı şekilde yorumlamasıdır.
-//? Overriding: Bir metodun çocuk sınıf tarafından yeniden tanımlanmasıdır.
-//? Overloading: Aynı isimde ancak farklı parametrelere sahip birden fazla metodun varlığıdır.
+//?Overriding: Bir metodun çocuk sınıf tarafından yeniden tanımlanmasıdır.
+Overloading: Aynı isimde ancak farklı parametrelere sahip birden fazla metodun varlığıdır.
 
 //! 6. Diğer Önemli Konular:
 //? Prototypes: JavaScript'in prototip tabanlı bir dil olması, nesnelerin özelliklerini ve metodlarını prototiplerden devraldığı anlamına gelir.
 //? This: this anahtar kelimesi, bir metodun çağrıldığı bağlamı ifade eder.
 //? Closure: Bir iç fonksiyonun dış fonksiyonun kapsamındaki değişkenlere erişebilmesi.
-
-
-//! Özetle
-
-//! Kalıtım (Inheritance):
-//? Kalıtım, bir sınıfın (çocuk sınıfı) başka bir sınıftan (ebeveyn sınıfı) özellik ve davranışları miras alması sürecidir. Bu sayede kod tekrarından kaçınılır ve yazılımın daha modüler hale getirilmesi sağlanır.
-
-//! Kapsülleme (Encapsulation)
-//? Kapsülleme, bir nesnenin iç durumunu ve davranışlarını dış dünyadan gizleme ve bu duruma kontrollü erişim sağlama işlemidir. Bu sayede, bir nesnenin iç yapısının değiştirilmesi durumunda diğer nesneler etkilenmez.
-
-//! Polimorfizm (Polymorphism)
-//? Polimorfizm, aynı isimli ama farklı imzaları olan metotların farklı sınıflar tarafından farklı şekilde uygulanabilme özelliğidir. Bu sayede, farklı türdeki nesneler aynı mesajı almasına rağmen farklı tepkiler verebilir.

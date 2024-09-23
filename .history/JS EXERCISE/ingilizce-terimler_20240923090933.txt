@@ -94,6 +94,4 @@
 // getter: alıcı
 // setter: pasör, ayarlayıcı
 // cache : önbellek
-// extends : uzanır, genişlemek
-// overriding : öncelikli , geçersiz kılma
-// Overloading: Aşırı Yükleme
+// extends : uzanır 

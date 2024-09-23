@@ -238,7 +238,7 @@ class Cat extends Animal {
 
 //! Özetle
 
-//! Kalıtım (Inheritance):
+//!Kalıtım (Inheritance):
 //? Kalıtım, bir sınıfın (çocuk sınıfı) başka bir sınıftan (ebeveyn sınıfı) özellik ve davranışları miras alması sürecidir. Bu sayede kod tekrarından kaçınılır ve yazılımın daha modüler hale getirilmesi sağlanır.
 
 //! Kapsülleme (Encapsulation)
