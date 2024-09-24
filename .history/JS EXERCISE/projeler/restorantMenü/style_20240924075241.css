@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+  }
+  
+  .menu {
+    margin-bottom: 20px;
+  }
+  
+  .menuLeft, .menuRight {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+  }
+  
+  .menuLeft {
+    float: left; /* Sol tarafa yaslar */
+    margin-right: 5%;
+  }
+  
+  .menuRight {
+    float: right; /* Sağ tarafa yaslar */
+    margin-left: 5%;
+  }

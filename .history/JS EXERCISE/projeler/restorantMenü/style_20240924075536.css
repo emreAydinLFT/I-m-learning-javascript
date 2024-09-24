@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+  }
+  
+  .menu {
+    margin-bottom: 20px;
+  }
+  
+  .menuLeft, .menuRight {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+  }
+  
+  .menuLeft {
+    float: left;
+    margin-right: 5%;
+  }
+  
+  .menuRight {
+    float: right;
+    margin-left: 5%;
+  }
+  
+  .rezervasyon {
+    clear: both; /* Önceki float edilen öğelerin etkisini kaldırır */
+    text-align: center; /* Ortalamak için */
+    margin-top: 20px; /* Üstünden boşluk bırakır */
+  }

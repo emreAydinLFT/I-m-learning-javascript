@@ -1,0 +1,22 @@
+.container {
+    text-align: center; /* Tüm içeriği yatay olarak ortalar */
+  }
+  
+  .menu {
+    margin-bottom: 20px; /* Başlık ile diğer içerik arasında boşluk bırakır */
+  }
+  
+  .menuLeft, .menuRight {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%; /* Her iki div'e eşit genişlik verir */
+    text-align: left;
+  }
+  
+  .menuLeft {
+    margin-right: 5%; /* İki div arasında boşluk bırakır */
+  }
+  
+  .menuRight {
+    margin-left: 5%;
+  }
