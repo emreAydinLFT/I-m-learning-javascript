@@ -1,0 +1,40 @@
+/* Tüm içeriği yatay olarak ortalar */
+.container {
+    text-align: center;
+  }
+  
+  /* Menü başlığı ile diğer içerik arasında 20 piksel boşluk bırakır */
+  .menu {
+    margin-bottom: 20px;
+  }
+  
+  /* Menü öğelerini içeren sol ve sağ sütunları tanımlar */
+  .menuLeft, .menuRight {
+    /* Sütunları yan yana dizer ve içeriği üst hizalar */
+    display: inline-block;
+    vertical-align: top;
+    /* Sütunların genişliğini ayarlar */
+    width: 45%;
+  }
+  
+  /* Sol sütunu sola yaslar ve sağ sütunla arasında 5 piksel boşluk bırakır */
+  .menuLeft {
+    float: left;
+    margin-right: 5%;
+  }
+  
+  /* Sağ sütunu sağa yaslar ve sol sütunla arasında 5 piksel boşluk bırakır */
+  .menuRight {
+    float: right;
+    margin-left: 5%;
+  }
+  
+  /* Rezervasyon bilgisini içeren paragrafı tanımlar */
+  .rezervasyon {
+    /* Önceki float edilen öğelerin etkisini kaldırır */
+    clear: both; 
+    /* İçeriği ortalar */
+    text-align: center;
+    /* Üstünden 20 piksel boşluk bırakır */
+    margin-top: 20px;
+  }

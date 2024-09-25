@@ -1,7 +1,6 @@
 const menu = [
     { name: 'Pizza', price: 25, category: 'Ana Yemek' },
     { name: 'Salata', price: 15, category: 'Ara Sıcak' },
-    { name: 'Çorba', price: 35, category: 'Sıcak değil' },
     // ... diğer yemekler
 ];
 

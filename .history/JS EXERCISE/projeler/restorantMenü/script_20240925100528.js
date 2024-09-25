@@ -20,7 +20,7 @@ const mostPopularElement = document.getElementById('mostPopular');
 menu.forEach(item => {
     const option = document.createElement('option');
     option.value = item.category;
-    option.textContent = item.category;
+    
     categoryFilter.appendChild(option);
 });
 

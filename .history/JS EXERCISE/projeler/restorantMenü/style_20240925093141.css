@@ -1,0 +1,9 @@
+/* Örnek CSS stili */
+body {
+  font-family: Arial, sans-serif;
+}
+
+#menuList li {
+  list-style: none;
+  margin: 10px 0;
+}

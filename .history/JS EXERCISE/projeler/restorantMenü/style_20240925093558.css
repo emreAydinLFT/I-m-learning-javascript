@@ -1,0 +1,21 @@
+/* Örnek CSS stili */
+body {
+  font-family: Arial, sans-serif;
+}
+
+#menuList {
+  list-style: none;
+  padding: 0;
+}
+
+#menuList li {
+  margin: 10px 0;
+}
+
+.select-button {
+  background-color: #4CAF50; /* Yeşil buton rengi */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
