@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Menüsü</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        .menuList {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menuList li {
+            padding: 5px;
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restoran Menüsü</h1>
+
+    <label for="categoryFilter">Kategori Seçin:</label>
+    <select id="categoryFilter" class="filter">
+        <option value="all">Tüm Kategoriler</option>
+    </select>
+
+    <ul class="menuList"></ul>
+
+    <p>Toplam Fiyat: <span class="totalPrice">0</span> TL</p>
+
+    <script>
+        const filter = document.querySelector('.filter'); // Kategori filtresi
+        const menuList = document.querySelector('.menuList'); // Menü listesi
+        const totalPriceElement = document.querySelector('.totalPrice'); // Toplam fiyat göstergesi
+
+        const menu = [
+            { name: 'Pizza', price: 25, category: 'soğuk' }, // Fiyatları string yerine number yaptım
+            { name: 'Salata', price: 15, category: 'ara' },
+            { name: 'Çorba', price: 20, category: 'sıcak' }
+        ];
+
+        // Kategorileri filtreleme menüsüne ekleme
+        menu.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item.category; // Kategori değeri
+            option.textContent = item.category; // Kategori metni
+            filter.appendChild(option); // Filtreye ekleme
+        });
+
+        // Menü öğelerini ekrana yazdıran fonksiyon
+        function renderMenu(filteredMenu) {
+            menuList.innerHTML = ''; // Mevcut listeyi temizle
+            filteredMenu.forEach(item => {
+                const li = document.createElement

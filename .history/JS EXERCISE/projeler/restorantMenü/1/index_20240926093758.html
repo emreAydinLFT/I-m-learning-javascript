@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Menüsü</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        .menuList {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menuList li {
+            padding: 5px;
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restoran Menüsü</h1>
+
+    <label for="categoryFilter">Kategori Seçin:</label>
+    <select id="categoryFilter" class="filter">
+        <option value="all">Tüm Kategoriler</option>
+    </select>
+
+    <ul class="menuList"></ul>
+
+    <p>Toplam Fiyat: <span class="totalPrice">0</span> TL</p>
+
+    <script>
+    </script>
+</body>
+</html>
