@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dijital Saat</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .clock {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .date {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .toggle-btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="clock">00:00:00</div>
+  <div class="date">1 Ocak 1970</div>
+  <button class="toggle-btn">12 saat formatına geç</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

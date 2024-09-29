@@ -1,0 +1,72 @@
+/* Ana gövde stilini ayarlıyoruz */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff; /* Hafif mavi arka plan */
+  margin: 0;
+  padding: 0;
+}
+
+/* Saat ve tarih kutusunu ortalamak ve tasarlamak için */
+.container {
+  text-align: center;
+  background-color: #fff; /* Beyaz arka plan */
+  padding: 20px 40px;
+  border-radius: 10px; /* Köşeleri yuvarlatıyoruz */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekliyoruz */
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Saat stilini ayarlıyoruz */
+.clock {
+  font-size: 48px; /* Büyük bir font boyutu */
+  font-weight: bold; /* Kalın font */
+  color: #333; /* Koyu gri renk */
+  margin-bottom: 10px; /* Saat ile tarih arasına boşluk ekliyoruz */
+}
+
+/* Tarih stilini ayarlıyoruz */
+.date {
+  font-size: 24px; /* Orta boyutlu font */
+  color: #666; /* Açık gri renk */
+  margin-bottom: 20px; /* Alt kısımdaki butonla biraz boşluk bırakıyoruz */
+}
+
+/* Buton stilini ayarlıyoruz */
+.toggle-btn {
+  background-color: #4CAF50; /* Yeşil bir arka plan */
+  color: white; /* Beyaz yazı */
+  padding: 10px 20px; /* Butona iç boşluk ekliyoruz */
+  border: none; /* Kenarlık kaldırıyoruz */
+  border-radius: 5px; /* Butonun köşelerini yuvarlatıyoruz */
+  cursor: pointer; /* Mouse üzerine gelince el imlecini gösteriyoruz */
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Geçiş efekti ekliyoruz */
+}
+
+/* Buton üzerine gelindiğinde arka planı biraz daha koyulaştırıyoruz */
+.toggle-btn:hover {
+  background-color: #45a049; /* Daha koyu yeşil */
+}
+
+/* Butonun üzerine tıklandığında, animasyon ekliyoruz */
+.toggle-btn:active {
+  transform: scale(0.98); /* Hafif bir küçülme efekti */
+}
+
+/* Medya sorgusu: Ekran küçük olduğunda responsive yapıyoruz */
+@media (max-width: 400px) {
+  .container {
+    padding: 15px 20px;
+  }
+  .clock {
+    font-size: 36px;
+  }
+  .date {
+    font-size: 18px;
+  }
+}

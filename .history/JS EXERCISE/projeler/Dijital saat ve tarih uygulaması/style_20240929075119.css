@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  .clock {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .date {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .toggle-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }

@@ -1,0 +1,29 @@
+  /* Genel sayfa stilini ayarlıyoruz */
+  body {
+    display: flex; /* Sayfa içeriğini flexbox ile düzenliyoruz. */
+    flex-direction: column; /* Flexbox öğelerini dikey hizalıyoruz. */
+    align-items: center; /* İçeriği yatayda ortalıyoruz. */
+    justify-content: center; /* İçeriği dikeyde ortalıyoruz. */
+    height: 100vh; /* Sayfanın tamamını kaplaması için yüksekliği %100 yapıyoruz. */
+    font-family: Arial, sans-serif; /* Arial yazı tipini seçiyoruz. */
+    background-color: #f0f0f0; /* Sayfanın arka planını açık gri yapıyoruz. */
+  }
+
+  /* Saat göstergesi için stil */
+  .clock {
+    font-size: 48px; /* Saat yazı boyutunu büyük yapıyoruz. */
+    margin-bottom: 10px; /* Saat ile tarih arasında biraz boşluk bırakıyoruz. */
+  }
+
+  /* Tarih göstergesi için stil */
+  .date {
+    font-size: 24px; /* Tarih yazısını biraz daha küçük yapıyoruz. */
+    margin-bottom: 20px; /* Tarih ile buton arasında boşluk bırakıyoruz. */
+  }
+
+  /* Buton stili */
+  .toggle-btn {
+    padding: 10px 20px; /* Butonun iç boşluklarını ayarlıyoruz. */
+    font-size: 18px; /* Buton yazısının boyutunu ayarlıyoruz. */
+    cursor: pointer; /* Üzerine gelindiğinde fare imlecini değiştiriyoruz. */
+  }
